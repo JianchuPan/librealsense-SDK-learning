@@ -16,7 +16,7 @@ class RealSenseImageProcessor(Node):
         self.bridge = CvBridge()
         
         # 创建保存图像的目录
-        self.save_dir = os.path.join(os.path.expanduser('~'), 'realsense_images')
+        self.save_dir = os.path.join(os.path.expanduser('~'), 'realsense_images/realsense_images')
         os.makedirs(self.save_dir, exist_ok=True)
         self.get_logger().info(f"图像将保存到: {self.save_dir}")
         
